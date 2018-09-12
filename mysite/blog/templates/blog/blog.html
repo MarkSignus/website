@@ -1,0 +1,11 @@
+{% extends "personal/header.html" %}
+{% block content %}
+	<h2>Recent blog posts:</h2></br>
+
+	<ul>
+	{% for post in object_list %}
+		<li><h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}"style="color: #cc0000">  {{ post.title }}</a></h5></li></br>
+	{% endfor %}
+	</ul>
+{% endblock %}
+

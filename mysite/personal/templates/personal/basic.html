@@ -1,0 +1,17 @@
+{% extends "personal/header.html" %}
+{% block content %}
+
+	<h2> Contact us </h2></br>
+	{% for c in content%}
+		{% if c == 'LinkedIn' %}
+			 <p> <b> LinkedIn:</b>  <a href="https://www.linkedin.com/company/signus-analytics/"> Signus Analytics</a> </p>
+
+		{% elif c == 'Email' %}
+			 <p><b> Email: </b> info@signusanalytics.com</p>
+		{% else %} 
+			<p><b> Call us: </b>07721843785</p>
+		{% endif %}
+	{% endfor %}
+
+
+{% endblock %}
